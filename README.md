@@ -1,4 +1,4 @@
-# price-monitoring [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
+# price-monitoring [![NPM Version](https://img.shields.io/npm/v/price-monitoring.svg)](https://www.npmjs.com/package/price-monitoring) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
 
 Node.js price monitoring library, leveraging the power of x-ray and nightmare.
 
@@ -52,7 +52,7 @@ var pm = new PriceMonitoring({
 })
 
 pm.on('priceAlert', function(product, newPrice){
-  // TODO: email alert.
+  // do whatever you want
 
 })
 
@@ -183,7 +183,7 @@ That's it. Then don't forget to put your parsers in a directory and give it as `
 
 - `float`: Cast the given string to float.
 
-### Use our website parser
+### Test our website parser in an isolate-manner
 
 ```javascript
 
@@ -225,3 +225,7 @@ Still in Beta
 ## Author
 
 Rocco Musolino
+
+## License
+
+MIT
