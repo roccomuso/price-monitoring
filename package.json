@@ -1,0 +1,40 @@
+{
+  "name": "price-monitoring",
+  "version": "1.0.0",
+  "description": "Price monitoring library, leveraging the power of x-ray and nightmare",
+  "main": "index.js",
+  "scripts": {
+    "example": "DEBUG=price-monitoring:* node ./example/example.js",
+    "test": "standard && nsp check"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/roccomuso/price-monitoring.git"
+  },
+  "keywords": [
+    "price",
+    "monitoring",
+    "node",
+    "crawler",
+    "website"
+  ],
+  "author": "Rocco Musolino",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/roccomuso/price-monitoring/issues"
+  },
+  "homepage": "https://github.com/roccomuso/price-monitoring#readme",
+  "dependencies": {
+    "async": "^2.3.0",
+    "csv-parse": "^1.2.0",
+    "debug": "^2.6.3",
+    "glob": "^7.1.1",
+    "lodash": "^4.17.4",
+    "x-ray": "^2.3.2",
+    "x-ray-nightmare": "^0.1.3"
+  },
+  "devDependencies": {
+    "nsp": "^2.6.3",
+    "standard": "^10.0.2"
+  }
+}
