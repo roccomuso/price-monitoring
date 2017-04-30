@@ -91,7 +91,11 @@ The `cb` is called once all the prices for all the Parsers have been retrieved.
 
 #### watchPrices(cb)
 
-Start watching for Prices, the `callback` is called once all the parsers retrieved all the products prices. The callback returns the current round number.
+Start watching for Prices, the `callback` is called once all the parsers retrieved all the products prices. The callback returns the current round number. If called multiple times it will not take effect.
+
+#### isWatchingPrices()
+
+Return `true` if the price watch operation is running, `false` otherwise.
 
 #### stop()
 
