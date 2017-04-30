@@ -95,7 +95,7 @@ Start watching for Prices, the `callback` is called once all the parsers retriev
 
 #### isWatchingPrices()
 
-Return `true` if the price watch operation is running, `false` otherwise.
+Returns `true` if the price watch operation is running, `false` otherwise.
 
 #### stop()
 
@@ -107,11 +107,15 @@ Close all the nightmareDrivers from the parsers' instances. (This avoids zombie 
 
 #### getParsersList()
 
-Return an Array of the all the Parsers loaded in the current instance of `PriceMonitoring` with all the submitted products.
+Returns an Array of the all the Parsers loaded in the current instance of `PriceMonitoring` with all the submitted products.
 
 #### getParsersCount()
 
-Return the number of site-parsers loaded.
+Returns the number of site-parsers loaded.
+
+#### getProductsCount()
+
+Returns the number of products added.
 
 #### isWebsiteCovered(url)
 
