@@ -11,6 +11,9 @@ Node.js price monitoring library, leveraging the power of x-ray and nightmare.
 - [x] Bind every URL to an instance of the parsers. (A parser can handle multiple urls).
     - [x] Check wether an url got his parser.
 
+## Install
+
+    $ npm install --save price-monitoring
 
 ## Usage
 
