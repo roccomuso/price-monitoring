@@ -120,6 +120,10 @@ Returns the number of site-parsers loaded.
 
 Returns the number of products added.
 
+#### getProducts()
+
+Returns an array of all the inserted products.
+
 #### isWebsiteCovered(url)
 
 Check wether a given website url has his own parser loaded or not.
