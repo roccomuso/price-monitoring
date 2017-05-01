@@ -1,6 +1,6 @@
 {
   "name": "price-monitoring",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Price monitoring library, leveraging the power of x-ray and nightmare",
   "main": "index.js",
   "scripts": {
