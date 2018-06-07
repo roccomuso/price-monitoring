@@ -60,7 +60,7 @@ pm.on('priceAlert', function(product, newPrice){
 })
 
 /* Add the products from CSV */
-pm.parseCSV(fileInput)
+pm.parseCSV(fileInput) // fileInput can be a csv file path or a Buffer
 // or manually
 pm.parseAndSubmit({
   name: 'Special price product',
