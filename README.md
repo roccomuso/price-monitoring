@@ -56,7 +56,7 @@ var pm = new PriceMonitoring({
 
 pm.on('priceAlert', function(product, newPrice){
   // do whatever you want
-
+  // ...
 })
 
 /* Add the products from CSV */
@@ -80,13 +80,13 @@ Check out a fully-working sample in the `example/` dir.
 
 ## API
 
-#### parseAndSubmit()
+#### parseAndSubmit(`<Object>`, `<fn>`)
 
-Parse and submit a product to his own parser instance. The product object should follow the structure explained above.
+Parse and submit a product to his own parser instance. The product object should follow the structure explained above. The callback will return `true` or `false` depending on the submission outcome.
 
-#### parseCSV(fileInput)
+#### parseCSV(`<fileInput>`/`<Buffer>`)
 
-Fetch and parse all the products from the provided CSV file.
+Fetch and parse all the products from the provided CSV file or Buffer. It returns a Promise.
 
 #### fetchAllPrices(cb)
 
@@ -124,7 +124,7 @@ Returns the number of products added.
 
 Returns an array of all the inserted products.
 
-#### isWebsiteCovered(url)
+#### isWebsiteCovered(`<Url>`)
 
 Check wether a given website url has his own parser loaded or not.
 
