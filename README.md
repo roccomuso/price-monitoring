@@ -84,6 +84,10 @@ Check out a fully-working sample in the `example/` dir.
 
 Parse and submit a product to his own parser instance. The product object should follow the structure explained above. The callback will return `true` or `false` depending on the submission outcome.
 
+#### removeProduct(`<Object>`/`<link>`, `<fn>`)
+
+Remove the product from his own parser instance matching the given product obj or link. The callback will return `true` or `false` if the product link match a registered parser.
+
 #### parseCSV(`<fileInput>`/`<Buffer>`)
 
 Fetch and parse all the products from the provided CSV file or Buffer. It returns a Promise.
